@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "devpulse": {
+      "type": "http",
+      "url": "https://mcp.devpulse.dev/mcp"
+    }
+  }
+}

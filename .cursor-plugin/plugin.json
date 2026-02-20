@@ -1,0 +1,12 @@
+{
+  "name": "devpulse",
+  "description": "DevPulse Plugin for Cursor — code quality analysis, automated reviews, CI/CD helpers, and refactoring skills powered by MCP.",
+  "version": "1.0.0",
+  "author": {
+    "name": "DevPulse"
+  },
+  "keywords": ["code-quality", "review", "testing", "ci-cd", "refactoring", "linting"],
+  "logo": "assets/logo.svg",
+  "license": "MIT",
+  "repository": "https://github.com/devpulse/devpulse-for-cursor"
+}
