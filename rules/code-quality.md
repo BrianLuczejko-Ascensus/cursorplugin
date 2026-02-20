@@ -1,11 +1,11 @@
 ---
 name: code-quality
-description: Code quality standards and best practices enforced by DevPulse
+description: Code quality standards and best practices
 ---
 
 # Code Quality Rules
 
-These rules define the code quality standards that DevPulse enforces during reviews and analysis.
+These rules define the code quality standards enforced during reviews and analysis.
 
 ## Function Complexity
 

@@ -5,7 +5,7 @@ description: REST API design guidelines and conventions
 
 # API Design Rules
 
-These rules define the REST API conventions that DevPulse enforces.
+These rules define the REST API conventions enforced during reviews and analysis.
 
 ## URL Structure
 

@@ -1,28 +1,24 @@
-# DevPulse Cursor Plugin
+# Cursor Plugin Demo
 
-Code quality analysis, automated reviews, and developer productivity tools for Cursor. Powered by MCP, slash commands, skills, and rules.
+Example Cursor plugin demonstrating MCP servers, slash commands, skills, and rules. Use this repo to explore how Cursor plugins are structured.
 
 ## Installation
 
-### From Cursor Marketplace
+### From Local Source
 
-Search for "devpulse" in the Cursor plugin marketplace, then install.
+```
+git clone https://github.com/BrianLuczejko-Ascensus/cursorplugin.git
+cd cursorplugin
+```
+
+Add the local directory as a plugin source in Cursor settings.
 
 Restart Cursor to activate the plugin, then verify:
 
 ```
 /help           # Should show /pulse and /review commands
-/mcp            # Should show devpulse MCP server
+/mcp            # Should show the MCP server
 ```
-
-### From Local Source
-
-```
-git clone https://github.com/devpulse/devpulse-for-cursor.git
-cd devpulse-for-cursor
-```
-
-Add the local directory as a plugin source in Cursor settings.
 
 ## Slash Commands
 
@@ -50,7 +46,7 @@ Request an AI-powered code review of staged changes, files, or pull requests.
 
 ## Skills
 
-### devpulse-code-review
+### code-review
 
 Deep code quality analysis — finds anti-patterns, security issues, and maintainability problems.
 
@@ -58,7 +54,7 @@ Deep code quality analysis — finds anti-patterns, security issues, and maintai
 Review the auth module for code quality issues
 ```
 
-### devpulse-refactor
+### refactor
 
 Identifies and executes safe refactoring operations — extract functions, simplify conditionals, eliminate duplication.
 
@@ -70,9 +66,9 @@ Refactor src/services/payment.ts to reduce complexity
 
 | Skill | Description |
 |-------|-------------|
-| `devpulse-setup-testing` | Configure test frameworks (Jest, Vitest, pytest, RSpec) and generate test scaffolding |
-| `devpulse-setup-ci` | Setup CI/CD pipelines for GitHub Actions, GitLab CI, or CircleCI |
-| `devpulse-setup-linting` | Configure linters and formatters (ESLint, Prettier, Ruff, Biome) |
+| `setup-testing` | Configure test frameworks (Jest, Vitest, pytest, RSpec) and generate test scaffolding |
+| `setup-ci` | Setup CI/CD pipelines for GitHub Actions, GitLab CI, or CircleCI |
+| `setup-linting` | Configure linters and formatters (ESLint, Prettier, Ruff, Biome) |
 
 ## Rules
 
@@ -86,12 +82,12 @@ The plugin ships with coding standard rules that the agent follows:
 
 ## Configuration
 
-The plugin automatically configures the DevPulse MCP server on install. No additional setup required beyond restarting Cursor.
+The plugin automatically configures the MCP server on install. No additional setup required beyond restarting Cursor.
 
 ## Plugin Structure
 
 ```
-devpulse-for-cursor/
+cursorplugin/
 ├── .cursor-plugin/
 │   ├── plugin.json           # Plugin metadata
 │   └── marketplace.json      # Marketplace listing
@@ -101,11 +97,11 @@ devpulse-for-cursor/
 │   ├── pulse.md              # /pulse command
 │   └── review.md             # /review command
 ├── skills/
-│   ├── devpulse-code-review/
-│   ├── devpulse-setup-testing/
-│   ├── devpulse-setup-ci/
-│   ├── devpulse-refactor/
-│   └── devpulse-setup-linting/
+│   ├── code-review/
+│   ├── setup-testing/
+│   ├── setup-ci/
+│   ├── refactor/
+│   └── setup-linting/
 ├── rules/
 │   ├── code-quality.md
 │   ├── testing-standards.md

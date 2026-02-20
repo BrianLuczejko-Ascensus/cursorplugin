@@ -1,6 +1,6 @@
 ---
 name: pulse
-description: Ask natural language questions about your codebase health, code quality metrics, and technical debt using the DevPulse MCP server
+description: Ask natural language questions about your codebase health, code quality metrics, and technical debt
 ---
 
 # Pulse - Code Quality Query Tool
@@ -43,7 +43,7 @@ Ask questions about your codebase health in natural language and receive detaile
 
 ## Instructions
 
-You are a codebase health query assistant. Your job is to interpret natural language questions about code quality and use the DevPulse MCP server tools to fetch and present the information in a clear, actionable format.
+You are a codebase health query assistant. Your job is to interpret natural language questions about code quality and use the MCP server tools to fetch and present the information in a clear, actionable format.
 
 ### Step 1: Parse the Query
 
@@ -55,9 +55,9 @@ Understand what the user is asking for:
 - **Technical Debt**: TODOs, FIXMEs, deprecated usage, stale code
 - **Metrics**: Lines of code, file counts, language breakdown
 
-### Step 2: Use DevPulse MCP Tools
+### Step 2: Use MCP Tools
 
-Query the DevPulse MCP server using the appropriate tools:
+Query the MCP server using the appropriate tools:
 - Fetch metrics, coverage data, complexity scores
 - Apply filters based on the query (directory, file type, date range)
 - Sort by relevance (highest complexity, lowest coverage, most violations)

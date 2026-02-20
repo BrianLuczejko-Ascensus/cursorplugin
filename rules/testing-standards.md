@@ -5,7 +5,7 @@ description: Testing conventions, coverage requirements, and best practices
 
 # Testing Standards
 
-These rules define the testing conventions that DevPulse enforces.
+These rules define the testing conventions enforced during reviews and analysis.
 
 ## Coverage Requirements
 

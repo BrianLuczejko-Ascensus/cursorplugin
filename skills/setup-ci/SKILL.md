@@ -1,5 +1,5 @@
 ---
-name: devpulse-setup-ci
+name: setup-ci
 description: Configure CI/CD pipelines for GitHub Actions, GitLab CI, or CircleCI. Use this when asked to add continuous integration, setup automated testing in CI, or create deployment workflows.
 ---
 

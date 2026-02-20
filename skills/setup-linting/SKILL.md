@@ -1,5 +1,5 @@
 ---
-name: devpulse-setup-linting
+name: setup-linting
 description: Configure linters and formatters for any project. Use this when asked to setup ESLint, Prettier, Ruff, RuboCop, golangci-lint, or similar tools. Supports JavaScript, TypeScript, Python, Ruby, Go, and Rust.
 ---
 

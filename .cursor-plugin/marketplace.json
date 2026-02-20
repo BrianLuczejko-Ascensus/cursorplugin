@@ -1,13 +1,13 @@
 {
-  "name": "devpulse-plugin-marketplace",
+  "name": "cursorplugin-marketplace",
   "owner": {
-    "name": "DevPulse"
+    "name": "Brian Luczejko"
   },
   "plugins": [
     {
-      "name": "devpulse",
+      "name": "cursorplugin",
       "source": "./",
-      "description": "Code quality analysis, automated reviews, and refactoring tools for Cursor. Includes MCP server, skills, and slash commands."
+      "description": "Example plugin showcasing Cursor's plugin features: MCP server, skills, slash commands, and rules."
     }
   ]
 }

@@ -1,9 +1,9 @@
 ---
-name: devpulse-refactor
+name: refactor
 description: Identify and execute safe refactoring operations on codebases. Use this when asked to refactor code, reduce complexity, extract functions, eliminate duplication, or restructure modules.
 ---
 
-# DevPulse Refactor
+# Refactor
 
 You are a specialized skill for identifying refactoring opportunities and executing safe, incremental transformations.
 
@@ -14,7 +14,7 @@ Invoke this skill when:
 - User wants to "reduce complexity" or "simplify"
 - User requests "extract a function" or "break this apart"
 - User mentions "code smells" or "technical debt"
-- DevPulse code review identified maintainability issues
+- A prior code review identified maintainability issues
 
 ## Refactoring Catalog
 
@@ -67,9 +67,9 @@ function getDiscount(user: User) {
 ### Consolidate Duplicate Code
 **When:** The same logic appears in multiple places.
 
-Use the DevPulse MCP server duplication report to identify candidates:
+Use the MCP server duplication report to identify candidates:
 ```bash
-devpulse analyze --duplication src/
+codeanalyze --duplication src/
 ```
 
 ### Replace Magic Values with Constants

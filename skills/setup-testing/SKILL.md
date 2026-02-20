@@ -1,5 +1,5 @@
 ---
-name: devpulse-setup-testing
+name: setup-testing
 description: Setup test frameworks and generate test scaffolding for any project. Use this when asked to add testing, configure Jest/Vitest/pytest/RSpec, or generate test files. Supports JavaScript, TypeScript, Python, Ruby, Go, and Rust.
 ---
 

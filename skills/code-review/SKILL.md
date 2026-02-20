@@ -1,11 +1,11 @@
 ---
-name: devpulse-code-review
+name: code-review
 description: Perform deep code quality analysis on files or pull requests. Use this when asked to review code, find bugs, check for anti-patterns, or audit a module for quality issues.
 ---
 
-# DevPulse Code Review
+# Code Review
 
-You are a specialized skill for performing thorough code quality reviews using the DevPulse MCP server for static analysis data.
+You are a specialized skill for performing thorough code quality reviews using the MCP server for static analysis data.
 
 ## When to Use This Skill
 
@@ -27,20 +27,20 @@ Determine what code to review:
 
 ### 2. Fetch Quality Metrics
 
-Use the DevPulse MCP server to gather:
+Use the MCP server to gather:
 
 ```bash
 # Fetch complexity metrics
-devpulse analyze --complexity <file_or_directory>
+codeanalyze --complexity <file_or_directory>
 
 # Fetch duplication report
-devpulse analyze --duplication <file_or_directory>
+codeanalyze --duplication <file_or_directory>
 
 # Fetch lint violations
-devpulse analyze --lint <file_or_directory>
+codeanalyze --lint <file_or_directory>
 
 # Fetch dependency analysis
-devpulse analyze --deps <file_or_directory>
+codeanalyze --deps <file_or_directory>
 ```
 
 ### 3. Read and Analyze the Code
@@ -82,7 +82,7 @@ For each file in scope:
 ### 4. Provide Structured Feedback
 
 ```markdown
-## DevPulse Code Review
+## Code Review
 
 **Scope:** [files/directories reviewed]
 **Quality Score:** [A-F grade based on metrics]
